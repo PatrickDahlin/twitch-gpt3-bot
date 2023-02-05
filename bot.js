@@ -42,7 +42,7 @@ function onMessageHandler (target, context, msg, self) {
 
   // Log messages to file, also emit to console for fun
   console.log(context['display-name']+":"+msg);
-  fs.appendFile('chatlog_kimmikichi.txt', context['display-name']+":"+msg+"\n", function() {});
+  fs.appendFile('chatlog.txt', context['display-name']+":"+msg+"\n", function() {});
   
 }
 
